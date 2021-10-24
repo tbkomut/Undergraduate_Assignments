@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.graduation_project">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="Kötücül Tespit"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/MenuTheme">
+        <activity android:name=".EntryPage">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainPage"
+            android:label = "Kötücül Tespit" />
+        <activity
+            android:name=".ListsAppsFragment"
+            android:label = "Kötücül Tespit" />
+        <activity
+            android:name=".ResultPage"
+            android:label = "Kötücül Tespit" />
+        <activity
+            android:name=".NonClearPage"
+            android:label = "Kötücül Tespit" />
+        <activity
+            android:name=".AppContent"
+            android:label = "Kötücül Tespit" />
+    </application>
+    <uses-permission android:name="android.permission.REQUEST_DELETE_PACKAGES" />
+</manifest>

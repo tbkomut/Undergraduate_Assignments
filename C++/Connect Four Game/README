@@ -1,0 +1,29 @@
+Dosya formatı 2 Adet var
+Load ve Saveleri virtual yaptığımdan dolayı
+Oyun tipleri Plus ve Diag için dosyamın formatı 2.TXT dede gösterildiği gibi
+
+Plus ve Diag için;
+File Format 
+	*Row size
+	*Colomn size
+	*Oyun tipi
+	*Sıradaki player
+	ve son olarak boardın tamamının görüntüsü
+
+Undo tipi için format farklı çünkü Undo gamede hamle sıraları önemlidir.
+Undo işlemi en son yapılan hamleye göre yapıldığı için bu yüzden 1.TXT ve 3.TXT
+dosyaları Undo game dosyalarıdır.
+
+Undo için;
+File Format
+	*Row size
+	*Colomn size
+	*Oyun tipi
+	*Sıradaki player
+	*Gerçekleşen hamle sayısı (yani Undo classımdaki totalIndex)
+	*Ve sırasıyla gerçekleşen hamleler ilk X, sonra O şeklinde
+		X	hamlesi
+		O	hamlesi
+		X	hamlesi
+		O	hamlesi
+		... şeklinde ilerler.
